@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablero</title>
+</head>
+<body>
+<script>
+        let prompt1 = parseInt(prompt("Introduzca un número para delimitar las dimensiones del tablero:"));
+        let answer1 = "";
+        let casilla;
+        for(let linea = 1; linea <= prompt1; linea = linea + 1) {
+            if(linea % 2 != 0){
+                for(let fila = 1; fila <= prompt1; fila = fila + 1) {
+                if(fila % 2 == 0) {
+                    answer1 += casilla = "X";
+                }else{                     
+                        answer1 += casilla = "O";
+                            }
+            }
+            }else{
+                for(let fila = 1; fila <= prompt1; fila = fila + 1) {
+                if(fila % 2 != 0) {
+                    answer1 += casilla = "X";
+                }else{                     
+                        answer1 += casilla = "O";
+                            }
+            }
+            }
+            console.log(answer1);
+            
+            answer1 = "";
+        }
+    </script>
+</body>
+</html>
